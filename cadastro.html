@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <h1>Cadastro de Produtos</h1>
+    <p id="lastAccess"></p>
+    <form id="productForm">
+        <label for="barcode">Código de Barras:</label>
+        <input type="text" id="barcode" required><br>
+        <label for="description">Descrição:</label>
+        <input type="text" id="description" required><br>
+        <label for="costPrice">Preço de Custo:</label>
+        <input type="number" id="costPrice" required><br>
+        <label for="salePrice">Preço de Venda:</label>
+        <input type="number" id="salePrice" required><br>
+        <label for="expiryDate">Data de Validade:</label>
+        <input type="date" id="expiryDate" required><br>
+        <label for="stock">Quantidade em Estoque:</label>
+        <input type="number" id="stock" required><br>
+        <label for="manufacturer">Fabricante:</label>
+        <input type="text" id="manufacturer" required><br>
+        <button type="submit">Cadastrar</button>
+    </form>
+    <h2>Produtos Cadastrados</h2>
+    <table border="1" id="productTable">
+        <thead>
+            <tr>
+                <th>Código de Barras</th>
+                <th>Descrição</th>
+                <th>Preço de Custo</th>
+                <th>Preço de Venda</th>
+                <th>Data de Validade</th>
+                <th>Qtd em Estoque</th>
+                <th>Fabricante</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="cadastro.js"></script>
+</body>
+</html>
